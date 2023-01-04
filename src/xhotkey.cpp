@@ -108,7 +108,7 @@ int readConfig(Config& cfg, string name) {
 int main(int argc, char** argv) {
 	Config cfg;
 
-	cout << "xhotkey v1.0.0" << endl;
+	cout << "xhotkey v1.1.0" << endl;
 
 	int numErrors = 0;
 
@@ -142,10 +142,12 @@ int main(int argc, char** argv) {
 								modifiers |= ShiftMask;
 							} else if(modifierName == "Alt") {
 								modifiers |= Mod1Mask;
+							} else if(modifierName == "Super") {
+								modifiers |= Mod4Mask;
 							} else {
 								cerr << modifierEntry.getSourceFile() << ": Unsupported modifier: `" << modifierName
 									 << "' at line " << modifierEntry.getSourceLine()
-									 << ". Must be one of: Control, Shift, Alt" << endl;
+									 << ". Must be one of: Control, Shift, Alt, Super" << endl;
 
 								numErrors++;
 							}

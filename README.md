@@ -35,6 +35,10 @@ hotkeys = ({
 	key = "l";
 	modifiers = ("Control", "Shift", "Alt");
 	command = "ls";
+},{
+	key = "t";
+	modifiers = ("Super");
+	command = "xterm";
 });
 ```
 
