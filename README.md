@@ -72,3 +72,7 @@ drwxrwxr-x 6 user user 4.0K Jan  4 14:59 ..
 -rw-rw-r-- 1 user user	0 Jan  3 23:31 .gitkeep
 -rwxrwxr-x 1 user user  52K Jan  4 14:57 xhotkey
 ```
+
+## Known limitations
+
+In Xorg/X11 various keyboard "locks", such as _CapsLock_, _NumLock_, and _ScrollLock_ are considered to be modifiers. This application fails to grab hotkeys when any of these locks are active.
