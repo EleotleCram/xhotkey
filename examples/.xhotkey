@@ -1,0 +1,24 @@
+// Here be hotkeys...
+hotkeys = ({
+	key = "XF86AudioPrev";
+	command = "playerctl previous";
+},{
+	key = "XF86AudioPlay";
+	command = "playerctl play-pause";
+},{
+	key = "XF86AudioNext";
+	command = "playerctl next";
+},{
+	key = "XF86AudioLowerVolume";
+	command = "amixer -D pulse set Master 10%-";
+},{
+	key = "XF86AudioMute";
+	command = "amixer -D pulse set Master toggle";
+},{
+	key = "XF86AudioRaiseVolume";
+	command = "amixer -D pulse set Master 10%+";
+},{
+	key = "l";
+	modifiers = ("Control", "Shift", "Alt");
+	command = "ls";
+});
